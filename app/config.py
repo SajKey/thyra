@@ -16,11 +16,14 @@ def load_config(path: str | None = None) -> Config:
     env = Env()
     env.read_env(path)
 
+    debug = env.bool("DEBUG", default=False)
+    log_level = env.str("LOG_LEVEL", default=None) or ("DEBUG" if debug else "INFO")
+
     return Config(
         database_url=env.str("DATABASE_URL"),
         secret_key=env.str("SECRET_KEY"),
-        debug=env.bool("DEBUG", default=False),
-        log_level=env.str("LOG_LEVEL", default="INFO"),
+        debug=debug,
+        log_level=log_level,
     )
 
 

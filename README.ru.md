@@ -1,5 +1,6 @@
 # thyra
 
+[![CI](https://github.com/SajKey/thyra/actions/workflows/ci.yml/badge.svg)](https://github.com/SajKey/thyra/actions/workflows/ci.yml)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/managed%20by-uv-de5fe9)](https://docs.astral.sh/uv/)
 [![Ruff](https://img.shields.io/badge/lint%20%2B%20format-ruff-261230)](https://docs.astral.sh/ruff/)
